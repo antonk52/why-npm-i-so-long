@@ -1,0 +1,24 @@
+{
+  "name": "why-npm-i-so-long",
+  "version": "1.0.0",
+  "description": "CLI to check dependencies size",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["npm", "cli", "install", "size"],
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/antonk52/why-npm-i-so-long.git"
+  },
+  "bugs": {
+      "url": "https://github.com/antonk52/why-npm-i-so-long/issues"
+  },
+  "author": "antonk52",
+  "license": "MIT",
+  "dependencies": {
+    "kleur": "^3.0.3",
+    "node-fetch": "^2.6.0"
+  }
+}
