@@ -6,7 +6,7 @@ Little utility to ease troubleshooting why installing npm dependencies takes too
 
 ## What is "publish size" vs "install size"?
 
-The "publish size" is the size of the source code published to npm. This number is easy to detect and is typically very small.
+The "publish size" is the size of the source code published to npm. This number is easy to detect and should be pretty small.
 
 The "install size" is the size your hard drive will report after running npm install. This includes the package, all of the dependencies, and its dependency's dependencies...and so on.
 
