@@ -34,7 +34,8 @@ function program(...args) {
                     '@',
                     version.replace(/[^=<>~]/g, ''),
                 ].join(''),
-            ).then(res => res.json()),
+            ).then(res => res.json())
+            .catch(() => ({name, install: {bytes: -1}, publish: {bytes: -1}})),
         ),
     )
         .then(sizes => {
@@ -46,6 +47,9 @@ function program(...args) {
                 .map(({name, version, install, publish}) => {
                     if (install.bytes === 0) {
                         return `${name} - unknown`;
+                    }
+                    if (install.bytes === -1) {
+                        return `${name} - api failed`;
                     }
                     return `
 ${kleur.bold(name)} @ ${version}
