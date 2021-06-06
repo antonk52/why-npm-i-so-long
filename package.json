@@ -23,7 +23,7 @@
   "author": "antonk52",
   "license": "MIT",
   "dependencies": {
-    "kleur": "^3.0.3",
-    "node-fetch": "^2.6.0"
+    "kleur": "^4.1.4",
+    "node-fetch": "^2.6.1"
   }
 }
