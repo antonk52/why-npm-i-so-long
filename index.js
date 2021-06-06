@@ -32,7 +32,7 @@ function program(...args) {
                     'https://packagephobia.now.sh/v2/api.json?p=',
                     name,
                     '@',
-                    version.replace(/[^=<>~]/g, ''),
+                    version.replace(/[\^=<>~]/g, ''),
                 ].join(''),
             ).then(res => res.json())
             .catch(() => ({name, install: {bytes: -1}, publish: {bytes: -1}})),
