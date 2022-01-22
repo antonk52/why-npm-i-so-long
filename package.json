@@ -24,6 +24,6 @@
   "license": "MIT",
   "dependencies": {
     "kleur": "^4.1.4",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^3.1.1"
   }
 }
